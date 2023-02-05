@@ -9,7 +9,6 @@ module Scrapper
                 faraday.ssl.verify = false
             end
         end
-        # '/press-release/nasa-industry-to-collaborate-on-space-communications-by-2025'
         def fetch(uri)
             @response = @conn.get(uri)
             if(@response.status == 200)
@@ -37,8 +36,6 @@ module Scrapper
 
         def parseArticle
             parsed_json = JSON.parse(@response.body)["_source"]
-            # document = Nokogiri::HTML(parsed_json["body"]).text
-
             @article = {
                 title: parsed_json["title"],
                 date: Date.parse(parsed_json["promo-date-time"]).strftime('%Y-%m-%d'),
