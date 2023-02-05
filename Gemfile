@@ -44,7 +44,7 @@ gem "bootsnap", require: false
 gem 'faraday'
 gem 'faraday-retry'
 gem 'faraday_middleware'
-gem 'pry'
+gem 'pdf-reader', '~> 1.4'
 # Use Sass to process CSS
 # gem "sassc-rails"
 
@@ -54,6 +54,8 @@ gem 'pry'
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
+  gem 'pry'
+
 end
 
 group :development do

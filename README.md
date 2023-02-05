@@ -2,26 +2,29 @@
 
 ## Run Scrapper (command line)
 * rails scrapper:nasa 
+* * Results
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+{:title=>"NASA, Industry to Collaborate on Space Communications by 2025",
+ :date=>"2022-04-20",
+ :release_no=>"22-036",
+ :article=>
+  " - - -- - - " 
+}
 
-Things you may want to cover:
+* rails scrapper:judgements
 
-* Ruby version
+* * Results
 
-* System dependencies
+{:petitioner=>"Arnold Kittick Jr.", :state=>"State of Alaska", :amount=>"$1000.00", :date=>"2062-08-28"}
+{:petitioner=>"Herman Malutin", :state=>"State of Alaska", :amount=>"$250.00", :date=>"2020-11-04"}
+{:petitioner=>"Corinna Lynne Baehm-Noble", :state=>"State of Alaska", :amount=>"$500.00", :date=>"2020-03-05"}
+{:petitioner=>"Richard Dorsey", :state=>"State of Alaska", :amount=>"$1,000.00", :date=>"2021-11-04"}
+{:petitioner=>"Jose Alfredo Galindo", :state=>"State of Alaska", :amount=>"$1,000.00", :date=>"2020-05-03"}
+{:petitioner=>"Frank Nunooruk", :state=>"State of Alaska", :amount=>"$1,000.00", :date=>"2020-12-08"}
 
-* Configuration
 
-* Database creation
+* Ruby version (3.2.0))
 
-* Database initialization
+* Rails version (~> 7.0.0)
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* 

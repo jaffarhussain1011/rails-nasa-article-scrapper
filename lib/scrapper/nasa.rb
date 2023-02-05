@@ -37,11 +37,13 @@ module Scrapper
 
         def parseArticle
             parsed_json = JSON.parse(@response.body)["_source"]
+            # document = Nokogiri::HTML(parsed_json["body"]).text
+
             @article = {
                 title: parsed_json["title"],
                 date: Date.parse(parsed_json["promo-date-time"]).strftime('%Y-%m-%d'),
                 release_no: parsed_json["release-id"],
-                article: parsed_json["body"]
+                article: Nokogiri::HTML(parsed_json["body"]).text.strip
             }
         end
     end
